@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Merriweather Sans', sans-serif;*/
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 266px 1100px;
+    grid-template-rows: 105px 550px ;
+    grid-template-areas: 
+        'header header'
+        'nav  main  ';
+        
+}
+header{
+    grid-area: header;
+    background-color:#718093;
+    display: flex;
+    
+}
+img{
+    width: 45px;
+    height: 45px;
+    margin: 10px 5px;
+    padding: 10px;
+}
+h3{
+    margin: 30px 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #c8d6e5;
+    
+}
+h4{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+input[type="text"]{
+    border: none;
+    margin: 2px 0;
+    background: none;
+    text-align: center;
+    margin: 0 15px 4px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+input[type="text"]:focus{
+    outline: none;
+}
+input[type="submit"]{
+    border: none;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 55px;
+    background: #222f3e;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: #8395a7;
+    
+}
+h5{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+main{
+    grid-area: content;
+    
+    
+}
+h2{
+    margin: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+h6{
+    margin: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #636e72;
+}
+main{
+    grid-area: main;
+}
+label{
+    margin: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+select{
+    border: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+select:focus{
+    outline: none;
+}
+input[type="search"]{
+    border: none;
+    margin: 0 20px;
+    width: 300px;
+}
+input[type="search"]:focus{
+    outline: none;
+}
+input[type="Submit"]{
+    padding: 5px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">
+        <div class="container">
+            <header>
+                <img src="logo.png" alt="logo">
+                <h3>Todo List</h3>
+            </header> 
+            <nav>
+                <h4>My Categories</h4><br>
+                <input type="text" name="category" placeholder="Enter Category"><br>
+                <input type="submit" value="+Add Category">
+                <h5>View all</h5>
+            </nav>
+            <main>
+                <h2>Welcome Back, Develper studio</h2>
+                <h6>You are currently viewing</h6>
+                <label for="category">Select A Category</label>
+                <select name="category" id="category">
+                    <option value="Javascript">Javascript</option>
+                    <option value="Homework">Homework</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="Web Programming">Web Programming</option>
+                </select>
+                <input type="search" name="Search" placeholder="Search">
+                <input type="Submit" value="+Add todo">
+            </main>
+            
+            
+        </div>
+    </div>
+
+
+    
+    <script>
+        Vue.createApp({
+          data() {
+            return {
+              message: 'Hello Vue!'
+            }
+          }
+        }).mount('#app')
+      </script>
+</body>
+</html>
